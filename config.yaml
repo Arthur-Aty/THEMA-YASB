@@ -127,7 +127,7 @@ widgets:
       api_key: "fce59cae3d97446eb46185418250307"
       update_interval: 600
       hide_decimal: true
-      location: 'Cacimba De Dentro,	Paraiba, Brazil' # You can use "USA Los Angeles 90006" {COUNTRY CITY ZIP_CODE}, or just city.
+      location: 'são paulo,	são paulo, Brazil' # You can use "USA Los Angeles 90006" {COUNTRY CITY ZIP_CODE}, or just city.
       callbacks:
         on_left: "toggle_card"
         on_right: "toggle_label"
