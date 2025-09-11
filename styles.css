@@ -227,40 +227,6 @@ QToolTip {
 
 
 
-/* MEDIA WIDGET */
-.media-widget {
-    padding-right: 5px;
-    padding-left: 2px;
-    margin: 5px 5px 5px 5px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-.media-widget .label {
-    background-color: rgba(0, 0, 0, 0);
-}
-.media-widget .btn {
-    color: rgba(255, 255, 255, 0.5);
-    padding: 0 5px;
-    margin: 0px 3;
-    font-weight: 500;
-    font-family: "Segoe Fluent Icons";
-}
-.media-widget .btn:hover {
-    color: #ffffff;
-}
-.media-widget .btn.play {
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 4px;
-    font-size: 16px;
-}
-.media-widget .btn.disabled:hover,
-.media-widget .btn.disabled {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-
 /*CALENDAR DROPDOWN*/
 
 .calendar {
@@ -368,19 +334,20 @@ QToolTip {
     border: none;
 }
 
-.volume-slider::groove {}
-.volume-slider::handle{} 
 .audio-menu {
     background-color: var(--crust)
 	
 }
+.audio-container .device:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+    color: #cacaca;
+}
 .audio-container .device {
-    background-color:var(--crust);
-    border: none;
-    padding:6px 8px 6px 4px;
-    margin: 2px 0;
-    font-size: 12px;
-    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 6px 8px 6px 4px;
+    margin: -3px;
+    font-size: var(--font-size-text);
+    color: var(--muted);
 }
 .audio-container .device.selected {
     background-color: rgba(255, 255, 255, 0.085);
@@ -388,7 +355,6 @@ QToolTip {
 .audio-container .device:hover {
     background-color: rgba(255, 255, 255, 0.06);
 }
-
 
 .server-widget {
     padding: 0 6px 0 6px
@@ -588,12 +554,9 @@ QToolTip {
 }
 
 
-
-
-
 .media-menu {
-    min-width: 360px;
-    max-width: 360px;
+    min-width: 400px;
+    max-width: 400px;
     background-color: var(--crust)
 }
 .media-menu .title,
@@ -691,6 +654,76 @@ QToolTip {
     background: #ffffff;
     border-radius: 3px;
     height: 4px;
+}
+
+
+/* MEDIA WIDGET */
+.media-widget {
+    padding-right: 5px;
+    padding-left: 2px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.media-widget .label {
+    background-color: rgba(0, 0, 0, 0);
+}
+.media-widget .btn {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 5px;
+    margin: 0px 3;
+    font-weight: 500;
+    font-family: "Segoe Fluent Icons";
+}
+.media-widget .btn:hover {
+    color: #ffffff;
+}
+.media-widget .btn.play {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    font-size: 16px;
+}
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.media-menu .app-volume-container {
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 8px 6px;
+    border-radius: 16px;
+    margin-left: 10px; 
+}
+.media-menu .app-volume-container .volume-slider::groove {
+    background: rgba(255, 255, 255, 0.1);
+    width: 2px;
+    border-radius: 3px;
+}
+.media-menu .app-volume-container .volume-slider::add-page {
+    background: white;
+    border-radius: 3px;
+}
+.media-menu .app-volume-container .volume-slider::groove:hover {
+    background: rgba(255, 255, 255, 0.1);
+    width:  6px;    
+    border-radius: 3px;
+}
+.media-menu .app-volume-container .volume-slider::sub-page {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+.media-menu .app-volume-container .mute-button,
+.media-menu .app-volume-container .unmute-button {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Segoe Fluent Icons";
+    margin-top: 4px; 
+}
+.media-menu .app-volume-container .unmute-button {
+    color: #a0a0a0;
 }
 
 
