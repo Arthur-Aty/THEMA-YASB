@@ -230,62 +230,62 @@ QToolTip {
 /*CALENDAR DROPDOWN*/
 
 .calendar {
-    background-color: var(--menu_bg);
-}
-.calendar .calendar-table{
-	border-radius: 10px;
-	background-color:#00000025;
+    background-color: var(--crust)
 }
 .calendar .calendar-table,
 .calendar .calendar-table::item {
-    color: #ffffff41;
-    font-family: var(--font);
-	font-size: var(--font-size);
+    background-color: rgba(17, 17, 27, 0);
+    color: rgba(162, 177, 196, 0.85);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     border: none;
     outline: none;  
 }
 .calendar .calendar-table::item:selected {
-    color: var(--accent);
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 .calendar .day-label {
     margin-top: 20px;
 }
 .calendar .day-label,
 .calendar .month-label,
-.calendar .date-label {
-    font-family: var(--font);
-    font-size: 14px;
+.calendar .date-label,
+.calendar .week-label,
+.calendar .holiday-label {
+    font-family: 'Segoe UI';
+    font-size: 16px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
     min-width: 180px;
     max-width: 180px;
-}
-.calendar .month-label {
-    font-weight: 700;
-}
-.calendar .date-label {
-    font-size: 80px;
-    font-weight: 900;
-    margin-top: -5px;
-	color: var(--accent);
 }
 .calendar .week-label,
 .calendar .holiday-label {
-    font-family: var(--font);
     font-size: 12px;
-    color: var(--media);
+    font-weight: 600;
+    color: rgba(162, 177, 196, 0.85);
+}
+.calendar .holiday-label {
+    color: rgba(162, 177, 196, 0.85);
     font-weight: 700;
-    min-width: 180px;
-    max-width: 180px;
+}
+.calendar .month-label {
+    font-weight: normal;
+}
+.calendar .date-label {
+    font-size: 88px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-top: -20px;
 }
 
 
 .disk-group {
     background-color: var(--crust);
 	border: 1px solid rgba(128, 128, 128, 0.2);
-    background-color: var(--crust)
 }
 .disk-group-row {
     min-width: 220px;
@@ -347,7 +347,7 @@ QToolTip {
     padding: 6px 8px 6px 4px;
     margin: -3px;
     font-size: var(--font-size-text);
-    color: var(--muted);
+    color: #ffffff;
 }
 .audio-container .device.selected {
     background-color: rgba(255, 255, 255, 0.085);
@@ -735,7 +735,7 @@ QToolTip {
  /* TRAFFIC */
 
 .traffic-widget .icon {
-    color: var(--traffictopo);
+    color: #ffffff;
     padding-right: 0px;
     padding-left: 0px;
 	font-size: 13px;
@@ -745,7 +745,7 @@ QToolTip {
 	font-size: var(--font-size);
 	text-align: right;
 	float: right;
-	color: var(--traffictopo);
+	color: #ffffff;
 	min-width: 100px;
 	max-width: 190px;
 }
@@ -753,12 +753,12 @@ QToolTip {
 /* TRAFFIC DROPDOWN */
 
 .traffic-menu {
-    background-color: var(--menu_bg);
+    background-color: var(--crust);
     min-width: 280px;
 }
 .traffic-menu .header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: var(--menu_bg2);
+    background-color: var(--crust);
 }
 .traffic-menu .header .title {
     padding: 8px;
@@ -791,7 +791,7 @@ QToolTip {
 
 .traffic-menu .download-speed,
 .traffic-menu .upload-speed {
-    background-color: var(--menu_bg2);
+    background-color: var(--crust);
     padding: 4px 10px;
     margin-right: 12px;
     margin-left: 12px;
@@ -814,7 +814,7 @@ QToolTip {
     font-size: 22px;
     font-weight: 900;
     font-family: var(--font);
-    color: #bcc2c5;
+    color: #ffffff;
 }
 .traffic-menu .upload-speed-unit,
 .traffic-menu .download-speed-unit {
@@ -824,7 +824,7 @@ QToolTip {
 }
 .traffic-menu .upload-speed-placeholder,
 .traffic-menu .download-speed-placeholder {
-    color: #747474;
+    color: #ffffff;
     font-size: var(--font-size);
     font-family: var(--font);
     padding: 0 0 4px 0;
@@ -866,13 +866,13 @@ QToolTip {
     font-family: var(--font);
 }
 .traffic-menu .internet-info {
-    background-color: var(--menu_bg2);
+    background-color: var(--crust);
 }
 .traffic-menu .internet-info.connected {
-    background-color: var(--menu_bg2);
+    background-color: var(--crust);
     color: var(--traffic);
 }
 .traffic-menu .internet-info.disconnected {
-    background-color: var(--menu_bg2);
+    background-color: var(--crust);
     color: var(--red);
 }
